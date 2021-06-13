@@ -15,5 +15,9 @@ for container in centres_list:
     #print(container.h1.a.text)
     addressdiv = container.find('div', class_ = 'venue-result-panel__address')
     print(addressdiv)
-    #cont = str(addressdiv).replace("<br/>", ",")
-    #print(cont)
+
+    contactdiv = container.find('div', class_ = 'venue-result-panel__contact')
+    print(contactdiv)
+
+    itemsdiv = container.find('div', class_ = 'venue-result-panel__items')
+    print(itemsdiv)
